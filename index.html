@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Dojonary</title>
+</head>
+<body>
+    <header>
+        <navBar>
+            <div class="leftNav"><h1>Dojonary</h1></div>
+            <div class="midNav">
+                <form>
+                    <input type="text" id="search" placeholder="search" name="search">
+                </form>
+            </div>
+            <div class="rightNav">
+                <button id="logIn" onclick="logIn(this)">Login</button>
+            </div>
+        </navBar>
+    </header>
+    <div class="mainContent">
+        <div class="col1">
+            <div class="def1">
+                <div class="word">
+                    <h1>ninja</h1>
+                    <h4><em>noun</em></h4>
+                    <p>Plural: <em>ninjas</em></p><br>
+                    <button id="likes" onclick="alert('ninja was liked'); likeClickedTop(this)">13 likes</button>
+                </div>
+                <div class="definition">
+                    <p>A practitioner skilled in the <a class=link id="jpn" href="#">Japanese</a> art of <a class="link" id="ninj" href="#">ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="def2">
+                <div class="word">
+                    <h1>ninja</h1>
+                    <h4><em>noun</em></h4>
+                    <p>Plural: <em>ninjas</em></p><br>
+                    <button id="likes" onclick="alert('ninja was liked'); likeClickedBot(this)">37 likes</button>
+                </div>
+                <div class="definition">
+                    <p>A <a class="link" id="prgmr" href="#">programmer</a> who breaks down problems with <a class="link" id="zen" href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="actionBox">
+                <p>Dojonary is defined by <strong>YOU</strong></p>
+                <button id="definition" onclick="defButton(this)">Add Definition</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
